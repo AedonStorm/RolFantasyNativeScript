@@ -1,0 +1,20 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo" 
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+    
+    <ActionBar class="action-bar" tittle="App">
+        <Button width="50" height="50" text="{{ 'fa-bars' | fontIconConverter }}" class="fa btn-without-border"/>
+        <!--<GridLayout columns="*" rows="*">
+            <StackLayout width="100%" height="100%" backgroundColor="red">
+                <Label textAlign="center" marginTop="50%" backgroundColor="blue" horizontalAlignment="center" verticalAlignment="bottom" row="0" col="0" class="action-bar-title" text="App"/>
+            </StackLayout>
+            <GridLayout width="100%" height="100%" row="0" col="0" columns="50, *, 50" rows="*">
+                <Button col="0" row="0" text="{{ 'fa-bars' | fontIconConverter }}" class="fa btn-without-border"/>
+            </GridLayout>
+        </GridLayout>-->
+    </ActionBar>
+
+    <GridLayout>
+        <!-- Add your page content here -->
+    </GridLayout>
+</Page>
