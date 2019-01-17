@@ -1,0 +1,1 @@
+C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app/src/main/java

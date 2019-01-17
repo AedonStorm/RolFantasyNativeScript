@@ -1,0 +1,159 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:2:1-43:12
+MERGED from [com.android.support:design:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\design-27.0.1.aar\4c953f4a4338f2c0d94e5906a069573b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\d25667c811e26e924f550d7540a8f4f2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.1.aar\81649061da49d809cb6414a7ed02e911\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.1.aar\95eaf6f840af1293469609341d2d9142\AndroidManifest.xml:17:1-22:12
+MERGED from [:nativescript-optimized-with-inspector:] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\4957d5b095c6a53cd63b5ef2ebdb18b0\AndroidManifest.xml:2:1-11:12
+MERGED from [:widgets-release:] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\bd4b2802eede5f2414d9b46faf1c3600\AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:recyclerview-v7:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.1.aar\b173d37333e5a600ab0fb92c2b8e10f0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\transition-27.0.1.aar\1e230af3629421eee728b02d907f99ff\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.1.aar\430eec2c0e9a496ce9eac5b0460abba5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.1.aar\e2447dfd05d897a136903a5563cd4863\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.1.aar\d6555b4cd71e989a944c3c26083b3875\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.1.aar\48434a7c4aebcb776c77195ca4125f7e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.1.aar\55e4d8170a10148ebf4e7e1abd59dff9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.1.aar\cf6fc2b3018a00882fc22a10f2babb9e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.1.aar\ab4aa848d7ae14f619c718cbedc0750b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\8f80ba518bd9c8a6930d9de573d9d038\AndroidManifest.xml:17:1-30:12
+INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:2:1-43:12
+	package
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:3:2-42
+		INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:5:2-27
+		INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:4:2-29
+		INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml
+supports-screens
+ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:7:2-11:33
+	android:largeScreens
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:10:3-30
+	android:smallScreens
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:8:3-30
+	android:normalScreens
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:9:3-31
+	android:xlargeScreens
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:11:3-31
+uses-sdk
+ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:13:2-15:34
+INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:13:2-15:34
+INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:13:2-15:34
+MERGED from [com.android.support:design:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\design-27.0.1.aar\4c953f4a4338f2c0d94e5906a069573b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\design-27.0.1.aar\4c953f4a4338f2c0d94e5906a069573b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\d25667c811e26e924f550d7540a8f4f2\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\d25667c811e26e924f550d7540a8f4f2\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.1.aar\81649061da49d809cb6414a7ed02e911\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.1.aar\81649061da49d809cb6414a7ed02e911\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.1.aar\95eaf6f840af1293469609341d2d9142\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.1.aar\95eaf6f840af1293469609341d2d9142\AndroidManifest.xml:20:5-44
+MERGED from [:nativescript-optimized-with-inspector:] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\4957d5b095c6a53cd63b5ef2ebdb18b0\AndroidManifest.xml:7:5-9:41
+MERGED from [:nativescript-optimized-with-inspector:] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\nativescript-optimized-with-inspector.aar\4957d5b095c6a53cd63b5ef2ebdb18b0\AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\bd4b2802eede5f2414d9b46faf1c3600\AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\bd4b2802eede5f2414d9b46faf1c3600\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.1.aar\b173d37333e5a600ab0fb92c2b8e10f0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.1.aar\b173d37333e5a600ab0fb92c2b8e10f0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\transition-27.0.1.aar\1e230af3629421eee728b02d907f99ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\transition-27.0.1.aar\1e230af3629421eee728b02d907f99ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.1.aar\430eec2c0e9a496ce9eac5b0460abba5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.1.aar\430eec2c0e9a496ce9eac5b0460abba5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.1.aar\e2447dfd05d897a136903a5563cd4863\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.1.aar\e2447dfd05d897a136903a5563cd4863\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.1.aar\d6555b4cd71e989a944c3c26083b3875\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.1.aar\d6555b4cd71e989a944c3c26083b3875\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.1.aar\48434a7c4aebcb776c77195ca4125f7e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.1.aar\48434a7c4aebcb776c77195ca4125f7e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.1.aar\55e4d8170a10148ebf4e7e1abd59dff9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.1.aar\55e4d8170a10148ebf4e7e1abd59dff9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.1.aar\cf6fc2b3018a00882fc22a10f2babb9e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.1.aar\cf6fc2b3018a00882fc22a10f2babb9e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.1.aar\ab4aa848d7ae14f619c718cbedc0750b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.1] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.1.aar\ab4aa848d7ae14f619c718cbedc0750b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\8f80ba518bd9c8a6930d9de573d9d038\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\8f80ba518bd9c8a6930d9de573d9d038\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:13:2-15:34
+INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:13:2-15:34
+	android:targetSdkVersion
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:15:3-32
+		INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:14:3-29
+		INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:17:2-76
+	android:name
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:17:19-74
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:18:2-77
+	android:name
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:18:19-75
+uses-permission#android.permission.INTERNET
+ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:19:2-63
+	android:name
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:19:19-61
+application
+ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:21:2-42:16
+MERGED from [:widgets-release:] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\bd4b2802eede5f2414d9b46faf1c3600\AndroidManifest.xml:11:5-12:19
+MERGED from [:widgets-release:] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\bd4b2802eede5f2414d9b46faf1c3600\AndroidManifest.xml:11:5-12:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\8f80ba518bd9c8a6930d9de573d9d038\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\8f80ba518bd9c8a6930d9de573d9d038\AndroidManifest.xml:24:5-28:19
+	android:label
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:25:3-35
+	android:icon
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:24:3-32
+	android:allowBackup
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:23:3-29
+	android:theme
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:26:3-34
+	android:name
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:22:3-49
+activity#com.tns.NativeScriptActivity
+ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:28:3-40:14
+	android:label
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:30:4-49
+	android:configChanges
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:31:4-65
+	android:theme
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:32:4-44
+	android:name
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:29:4-47
+meta-data#SET_THEME_ON_LAUNCH
+ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:34:4-87
+	android:resource
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:34:50-84
+	android:name
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:34:15-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:36:4-39:20
+action#android.intent.action.MAIN
+ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:37:5-57
+	android:name
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:37:13-54
+category#android.intent.category.LAUNCHER
+ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:38:5-65
+	android:name
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:38:15-62
+activity#com.tns.ErrorReportActivity
+ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:41:3-57
+	android:name
+		ADDED from C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\src\main\AndroidManifest.xml:41:13-55
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\8f80ba518bd9c8a6930d9de573d9d038\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\8f80ba518bd9c8a6930d9de573d9d038\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Aedon\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\8f80ba518bd9c8a6930d9de573d9d038\AndroidManifest.xml:26:13-58
