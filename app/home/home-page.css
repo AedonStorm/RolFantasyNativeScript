@@ -1,0 +1,21 @@
+.tittle {
+    color: white;
+    font-size: 36;
+}
+
+.btn-without-border {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.0);
+    border-color:rgba(255, 0, 0, 0.0);
+    border-width: 1;
+ }
+ .btn-without-border:active {
+    opacity: 0.6;
+ }
+
+ .coverImage { 
+    background: url(~/img/home/icons/scroll.png);
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+}

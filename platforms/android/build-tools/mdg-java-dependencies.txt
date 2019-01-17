@@ -18,4 +18,3 @@ C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\build\expl
 C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\build\exploded-dependencies\7\classes.jar
 C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\build\exploded-dependencies\8\classes.jar
 C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\build\exploded-dependencies\9\classes.jar
-C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app\build\intermediates\classes\debug

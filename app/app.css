@@ -9,7 +9,7 @@ In many cases you may want to use the NativeScript core theme instead
 of writing your own CSS rules. For a full list of class names in the theme
 refer to http://docs.nativescript.org/ui/theme.
 */
-@import '~nativescript-theme-core/css/sky.css';
+@import '~nativescript-theme-core/css/core.dark.css';
 
 /*
 For example, the following CSS rule changes the font size of all UI
@@ -21,11 +21,18 @@ components that have the btn class name.
     font-size: 32;
  }
 
- .btn-without-border {
-    padding: 0;
-    border: none;
-    background-color: transparent;
- }
+.roboto {
+   font-family: 'roboto-regular','roboto regular', 'sans-serif';
+}
+
+
+.sourcesanspro {
+   font-family: 'SourceSansPro-Regular', 'Source Sans Pro', 'sans-serif';
+}
+
+.sourcesanspro-semibold {
+   font-family: 'SourceSansPro-SemiBold', 'Source Sans Pro', 'sans-serif';
+}
 
 .btn {
     font-size: 18;

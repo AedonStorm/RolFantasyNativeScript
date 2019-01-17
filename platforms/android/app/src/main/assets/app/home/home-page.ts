@@ -5,11 +5,83 @@ logic, and to set up your page’s data binding.
 */
 
 import { NavigatedData, Page } from "ui/page";
+import { HomeViewModel, pageState } from "./home-view-model";
+import { EventData, fromObject } from "tns-core-modules/data/observable";
+import { ListView, ItemEventData } from "tns-core-modules/ui/list-view";
+import { Button } from "ui/button";
+import { AnimationCurve } from "ui/enums";
+import { screen } from "platform";
 
-import { HomeViewModel } from "./home-view-model";
+let page: Page
+let model: HomeViewModel
 
 export function onNavigatingTo(args: NavigatedData) {
-    const page = <Page>args.object;
+    page = <Page>args.object;
+    model = new HomeViewModel(page);
+    page.bindingContext = loadList();
+    
+    const listView = page.getViewById<ListView>("homeList");
+    page.bindingContext.homeListItems.push({ title: "Game of Thrones" });
+    // Manually trigger the update so that the new color is shown.
+    listView.refresh();
+}
 
-    page.bindingContext = new HomeViewModel();
+export function loadList() {
+    return fromObject({
+        // Setting the listview binding source
+        homeListItems: [
+            { title: "The Da Vinci Code" },
+            { title: "Harry Potter and the Chamber of Secrets" },
+            { title: "The Alchemist" },
+            { title: "The Godfather" },
+            { title: "Goodnight Moon" },
+            { title: "The Hobbit" }
+        ]
+    });
+}
+
+export function onListViewLoaded(args: EventData) {
+    const listView = <ListView>args.object;
+}
+
+export function onItemTap(args: ItemEventData) {
+    const index = args.index;
+    console.log(`Second ListView item tap ${index}`);
+}
+
+export function onTapHome(args: EventData) {
+    const button = <Button>args.object;
+    console.log("home")
+    model.switchPage(pageState.Home)
+}
+export function onTapAdventure(args: EventData) {
+    const button = <Button>args.object;
+    console.log("adventure")
+    model.switchPage(pageState.Adventure)
+}
+export function onTapEnemy(args: EventData) {
+    const button = <Button>args.object;
+    console.log("enemy")
+    model.switchPage(pageState.Enemy)
+}
+export function onTapDungeon(args: EventData) {
+    const button = <Button>args.object;
+    console.log("dungeon")
+    model.switchPage(pageState.Dungeon)
+}
+export function onTapTabern(args: EventData) {
+    const button = <Button>args.object;
+    console.log("tabern")
+}
+export function onTapNPC(args: EventData) {
+    const button = <Button>args.object;
+    console.log("npc")
+}
+export function onTapShop(args: EventData) {
+    const button = <Button>args.object;
+    console.log("shop")
+}
+export function onTapChest(args: EventData) {
+    const button = <Button>args.object;
+    console.log("chest")
 }
