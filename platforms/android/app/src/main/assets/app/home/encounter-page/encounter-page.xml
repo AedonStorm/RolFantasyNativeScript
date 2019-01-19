@@ -4,9 +4,9 @@
                 backgroundColor="#404040">
         <Button col="0" text="{{ 'fa-angle-left' | fontIconConverter }}" class="fa" backgroundColor="transparent" height="50" visibility="collapse"/>
         <StackLayout col="1" verticalAlignment="center">
-            <Label class="topbar-tittle" text="Encounter"/>
+            <Label class="topbar-tittle sourcesanspro-semibold" text="Encounter"/>
         </StackLayout>
-        
+        <Button col="2" width="50" height="50" text="{{ 'fa-random' | fontIconConverter }}" class="fa btn-without-border"/>
     </GridLayout>
     <GridLayout row="1">
         <ScrollView>

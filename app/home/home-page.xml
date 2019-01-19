@@ -3,6 +3,7 @@
     xmlns="http://schemas.nativescript.org/tns.xsd"
     xmlns:lv="nativescript-ui-listview"
     xmlns:AdventurePage="home/adventure-page"
+    xmlns:EncounterPage="home/encounter-page"
     actionBarHidden="true">
     <!--xmlns:MainComponent="components/home-components"-->
     <!-- <div>Icons made by <a href="http://www.freepik.com/" 
@@ -47,23 +48,30 @@
                 </ListView>
         </StackLayout>
         <AdventurePage:adventure-page row="0" rowSpan="2" id="adventure-page" width="100%" height="100%" visibility="collapse"/> 
+        <EncounterPage:encounter-page row="0" rowSpan="2" id="encounter-page" width="100%" height="100%" visibility="collapse"/> 
         
         
         <GridLayout row="2" width="100%" height="100%" height="60" verticalAlignment="bottom" 
                         columns="*, *, *, *" rows="*">
 
-                <GridLayout col="0" id="btnHome" tap="onTapHome" width="100%" height="100%"  backgroundColor="rgba(255,255,255,0.2)">
+                <GridLayout id="hightlightedBtn" col="0" width="100%" height="100%" backgroundColor="black" opacity="0.4"/>
+
+                <GridLayout col="0" id="btnHome" tap="onTapHome" width="100%" height="100%">
                     <Image margin="5" width="55" height="55" src="~/img/home/icons/banner.png"/>
                 </GridLayout>
                 <GridLayout col="1" id="btnAdventure" tap="onTapAdventure" width="100%" height="100%">
                     <Image width="60" height="60" src="~/img/home/icons/scroll.png"/>
                 </GridLayout>
-                <GridLayout col="2" id="btnEnemy" tap="onTapEnemy" width="100%" height="100%">
+                <GridLayout col="2" id="btnEnemy" tap="onTapEncounter" width="100%" height="100%">
                     <Image margin="5" width="55" height="55" src="~/img/home/icons/axes.png"/>
                 </GridLayout>
-                <GridLayout col="3" id="btnTabern" tap="onTapTabern" width="100%" height="100%">
+                <!--<GridLayout col="3" id="btnTabern" tap="onTapTabern" width="100%" height="100%">
+                    <Image margin="5" width="55" height="55" src="~/img/home/icons/lute.png"/>
+                </GridLayout>-->
+                <GridLayout col="3" width="100%" height="100%">
                     <Image margin="5" width="55" height="55" src="~/img/home/icons/lute.png"/>
                 </GridLayout>
+                <GridLayout col="3" width="100%" height="100%" backgroundColor="black" opacity="0.8"/>
             </GridLayout>
             <!--<MainComponent:bottomBar row="1" width="100%" height="100%" backgroundColor="blue"/>-->
         </GridLayout>

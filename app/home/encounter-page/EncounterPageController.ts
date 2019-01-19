@@ -3,7 +3,7 @@ import { Page, Color, View } from "tns-core-modules/ui/page/page";
 
 
 
-export class EnemyPageController extends Observable {
+export class EncounterPageController extends Observable {
 
     constructor() {
         super();

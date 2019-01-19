@@ -7,13 +7,14 @@
                 backgroundColor="#404040">
         <Button col="0" text="{{ 'fa-angle-left' | fontIconConverter }}" class="fa" backgroundColor="transparent" height="50" visibility="collapse"/>
         <StackLayout col="1" verticalAlignment="center">
-            <Label class="topbar-tittle" text="Adventure"/>
+            <Label class="topbar-tittle sourcesanspro-semibold" text="Adventure"/>
         </StackLayout>
-        
+        <Button col="2" width="50" height="50" text="{{ 'fa-random' | fontIconConverter }}" class="fa btn-without-border"/>
     </GridLayout>
     <GridLayout row="1">
         <ScrollView>
-             <FlexboxLayout margin="10" flexDirection="row" opacity="0.7" class="list-group-item">
+            <StackLayout>
+                <FlexboxLayout margin="10" flexDirection="row" opacity="0.7" class="list-group-item">
                 <GridLayout rows="*, *, 2*" columns="100, *, 10" backgroundColor="rgba(255,255,255,0.2)" height="100" borderRadius="10">
                     <StackLayout row="0" rowSpan="3" col="0" backgroundColor="rgba(0,0,0,0.5)" height="80" width="80" verticalAlignment="center" horizontalAlignment="center" borderRadius="5"></StackLayout>
                     <StackLayout row="0" col="1" backgroundColor="rgba(0,0,0,0.5)" height="14" width="20%" verticalAlignment="center" horizontalAlignment="left" borderRadius="5"></StackLayout>
@@ -21,6 +22,7 @@
                     <StackLayout row="2" col="1" backgroundColor="rgba(0,0,0,0.5)" height="40" width="100%" verticalAlignment="center" horizontalAlignment="left" borderRadius="5"></StackLayout>
                 </GridLayout>
             </FlexboxLayout>
+            </StackLayout>
         </ScrollView>
     </GridLayout>
 </GridLayout>
