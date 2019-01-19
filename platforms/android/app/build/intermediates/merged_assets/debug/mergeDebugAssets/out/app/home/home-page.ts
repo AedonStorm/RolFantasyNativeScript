@@ -4,26 +4,24 @@ a code-behind file. The code-behind is a great place to place your view
 logic, and to set up your page’s data binding.
 */
 
-import { NavigatedData, Page } from "ui/page";
-import { HomeViewModel, pageState } from "./home-view-model";
-import { EventData, fromObject } from "tns-core-modules/data/observable";
-import { ListView, ItemEventData } from "tns-core-modules/ui/list-view";
-import { Button } from "ui/button";
-import { AnimationCurve } from "ui/enums";
-import { screen } from "platform";
+import { NavigatedData, Page } from "ui/page"
+import { HomeViewModel, PageState } from "./home-view-model"
+import { EventData, fromObject } from "tns-core-modules/data/observable"
+import { ListView, ItemEventData } from "tns-core-modules/ui/list-view"
+import { Button } from "ui/button"
 
 let page: Page
 let model: HomeViewModel
 
 export function onNavigatingTo(args: NavigatedData) {
-    page = <Page>args.object;
-    model = new HomeViewModel(page);
-    page.bindingContext = loadList();
+    page = <Page>args.object
+    model = new HomeViewModel(page)
+    page.bindingContext = loadList()
     
-    const listView = page.getViewById<ListView>("homeList");
-    page.bindingContext.homeListItems.push({ title: "Game of Thrones" });
+    const listView = page.getViewById<ListView>("homeList")
+    page.bindingContext.homeListItems.push({ title: "Game of Thrones" })
     // Manually trigger the update so that the new color is shown.
-    listView.refresh();
+    listView.refresh()
 }
 
 export function loadList() {
@@ -37,51 +35,35 @@ export function loadList() {
             { title: "Goodnight Moon" },
             { title: "The Hobbit" }
         ]
-    });
+    })
 }
 
 export function onListViewLoaded(args: EventData) {
-    const listView = <ListView>args.object;
+    const listView = <ListView>args.object
 }
 
 export function onItemTap(args: ItemEventData) {
-    const index = args.index;
-    console.log(`Second ListView item tap ${index}`);
+    const index = args.index
+    console.log(`Second ListView item tap ${index}`)
 }
 
 export function onTapHome(args: EventData) {
-    const button = <Button>args.object;
+    const button = <Button>args.object
     console.log("home")
-    model.switchPage(pageState.Home)
+    model.switchPage(PageState.Home)
 }
 export function onTapAdventure(args: EventData) {
-    const button = <Button>args.object;
+    const button = <Button>args.object
     console.log("adventure")
-    model.switchPage(pageState.Adventure)
+    model.switchPage(PageState.Adventure)
 }
-export function onTapEnemy(args: EventData) {
-    const button = <Button>args.object;
-    console.log("enemy")
-    model.switchPage(pageState.Enemy)
-}
-export function onTapDungeon(args: EventData) {
-    const button = <Button>args.object;
-    console.log("dungeon")
-    model.switchPage(pageState.Dungeon)
+export function onTapEncounter(args: EventData) {
+    const button = <Button>args.object
+    console.log("encounter")
+    model.switchPage(PageState.Encounter)
 }
 export function onTapTabern(args: EventData) {
-    const button = <Button>args.object;
+    const button = <Button>args.object
     console.log("tabern")
-}
-export function onTapNPC(args: EventData) {
-    const button = <Button>args.object;
-    console.log("npc")
-}
-export function onTapShop(args: EventData) {
-    const button = <Button>args.object;
-    console.log("shop")
-}
-export function onTapChest(args: EventData) {
-    const button = <Button>args.object;
-    console.log("chest")
+    model.switchPage(PageState.Tabern)
 }

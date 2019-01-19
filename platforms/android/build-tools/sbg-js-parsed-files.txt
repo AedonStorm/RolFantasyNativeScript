@@ -1,5 +1,6 @@
 C:\Datos\Proyectos NativeScript\tNativeScriptRepository\tNativeScript\platforms\android\app\src\main\assets\app\app.js
-C:\Datos\Proyectos NativeScript\tNativeScriptRepository\tNativeScript\platforms\android\app\src\main\assets\app\controller\AdventurePageController.js
+C:\Datos\Proyectos NativeScript\tNativeScriptRepository\tNativeScript\platforms\android\app\src\main\assets\app\home\adventure-page\AdventurePageController.js
+C:\Datos\Proyectos NativeScript\tNativeScriptRepository\tNativeScript\platforms\android\app\src\main\assets\app\home\encounter-page\EncounterPageController.js
 C:\Datos\Proyectos NativeScript\tNativeScriptRepository\tNativeScript\platforms\android\app\src\main\assets\app\home\home-page.js
 C:\Datos\Proyectos NativeScript\tNativeScriptRepository\tNativeScript\platforms\android\app\src\main\assets\app\home\home-view-model.js
 C:\Datos\Proyectos NativeScript\tNativeScriptRepository\tNativeScript\platforms\android\app\src\main\assets\app\tns_modules\nativescript-ui-listview\hooks\before-livesync\nativescript-angular-sync.js

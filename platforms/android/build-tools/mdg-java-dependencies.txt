@@ -40,4 +40,3 @@ C:\Datos\Proyectos NativeScript\tNativeScriptRepository\tNativeScript\platforms\
 C:\Datos\Proyectos NativeScript\tNativeScriptRepository\tNativeScript\platforms\android\app\build\exploded-dependencies\7\classes.jar
 C:\Datos\Proyectos NativeScript\tNativeScriptRepository\tNativeScript\platforms\android\app\build\exploded-dependencies\8\classes.jar
 C:\Datos\Proyectos NativeScript\tNativeScriptRepository\tNativeScript\platforms\android\app\build\exploded-dependencies\9\classes.jar
-C:\Datos\Proyectos NativeScript\tNativeScriptRepository\tNativeScript\platforms\android\app\build\intermediates\javac\debug

@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const observable_1 = require("data/observable");
+class AdventurePageController extends observable_1.Observable {
+    constructor() {
+        super();
+    }
+}
+exports.AdventurePageController = AdventurePageController;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQWR2ZW50dXJlUGFnZUNvbnRyb2xsZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJBZHZlbnR1cmVQYWdlQ29udHJvbGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGdEQUE2QztBQUs3Qyw2QkFBcUMsU0FBUSx1QkFBVTtJQUVuRDtRQUNJLEtBQUssRUFBRSxDQUFDO0lBQ1osQ0FBQztDQUNKO0FBTEQsMERBS0MiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBPYnNlcnZhYmxlIH0gZnJvbSBcImRhdGEvb2JzZXJ2YWJsZVwiO1xyXG5pbXBvcnQgeyBQYWdlLCBDb2xvciwgVmlldyB9IGZyb20gXCJ0bnMtY29yZS1tb2R1bGVzL3VpL3BhZ2UvcGFnZVwiO1xyXG5cclxuXHJcblxyXG5leHBvcnQgY2xhc3MgQWR2ZW50dXJlUGFnZUNvbnRyb2xsZXIgZXh0ZW5kcyBPYnNlcnZhYmxlIHtcclxuXHJcbiAgICBjb25zdHJ1Y3RvcigpIHtcclxuICAgICAgICBzdXBlcigpO1xyXG4gICAgfVxyXG59IFxyXG4iXX0=

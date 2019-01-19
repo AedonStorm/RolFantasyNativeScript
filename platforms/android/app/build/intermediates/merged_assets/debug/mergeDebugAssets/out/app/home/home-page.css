@@ -19,3 +19,48 @@
     background-position: center; 
     background-size: cover; 
 }
+
+.topbar-ios{
+    font-weight: 200;
+    height: 60;
+}
+.topbar {
+    font-weight: 200;
+    height: 50;
+    margin-top: 0;
+}
+.topbar button{
+    background-color: transparent;
+    border-color: transparent;
+    border-width: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.topbar-tittle {
+    text-align: center;
+    font-size: 24;
+    font-weight: 500;
+}
+
+label {
+    color: white;
+}
+
+.page-title {
+    font-family: 'SourceSansPro-Regular', 'Source Sans Pro', 'sans-serif';
+    font-size: 24;
+}
+
+.page-subtitle {
+    font-family: 'SourceSansPro-Regular', 'Source Sans Pro', 'sans-serif';
+    font-size: 18;
+}
+
+.sectionTitle {
+    font-family: 'SourceSansPro-Regular', 'Source Sans Pro', 'sans-serif';
+    font-size: 16;
+    font-weight: bold;
+    padding-top: 5;
+    padding-left: 10;
+}

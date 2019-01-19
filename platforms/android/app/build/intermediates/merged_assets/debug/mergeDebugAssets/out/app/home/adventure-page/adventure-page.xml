@@ -1,0 +1,93 @@
+<!-- #303030 #303030 -->
+<!-- #303030 #404040 -->
+
+<GridLayout columns="*" rows="50,*" backgroundColor="#303030">
+    <GridLayout row="0" columns="50, *, 50" rows="*"
+                ios:class="topbar-ios" android:class="topbar"
+                backgroundColor="#404040">
+        <Button col="0" text="{{ 'fa-angle-left' | fontIconConverter }}" class="fa" backgroundColor="transparent" height="50" visibility="collapse"/>
+        <StackLayout col="1" verticalAlignment="center">
+            <Label class="topbar-tittle sourcesanspro-semibold" text="Adventure"/>
+        </StackLayout>
+        <Button col="2" width="50" height="50" text="{{ 'fa-random' | fontIconConverter }}" class="fa btn-without-border"/>
+    </GridLayout>
+    <GridLayout row="1">
+        <ScrollView>
+            <StackLayout>
+                <FlexboxLayout margin="10" flexDirection="row" opacity="0.7" class="list-group-item">
+                    <GridLayout rows="50, 50, auto" columns="100, auto, 10" backgroundColor="rgba(255,255,255,0.2)" borderRadius="10">
+                        <StackLayout row="0" rowSpan="2" col="0" backgroundColor="rgba(0,0,0,0.5)" height="80" width="80" verticalAlignment="center" horizontalAlignment="center" borderRadius="5">
+                            <Image margin="5" stretch="fill" src="~/img/home/adventure/demon.jpg"/>
+                        </StackLayout>
+                        <GridLayout row="0" col="1" backgroundColor="rgba(0,0,0,0.5)" rows="auto" columns="auto" marginTop="10" padding="5" verticalAlignment="center" horizontalAlignment="left" borderRadius="5">
+                            <Label class="page-title" text="King slayer" />
+                        </GridLayout>
+                        <GridLayout row="1" col="1" backgroundColor="rgba(0,0,0,0.5)" rows="auto" columns="auto" marginBottom="5" padding="5" verticalAlignment="center" horizontalAlignment="left" borderRadius="5">
+                            <Label class="page-subtitle" text="Action/Adventure" />
+                        </GridLayout>
+                        <StackLayout row="2" col="0" colSpan="2" width="100%" verticalAlignment="center" horizontalAlignment="left" >
+                            <StackLayout margin="0 10 10 10" backgroundColor="rgba(0,0,0,0.5)" borderRadius="5">
+                                <Label class="sourcesanspro" textWrap="true" padding="5" text="This is the most common and straightforward sort of adventure there is. In the Action/Adventure scenario, you present your characters with a task and then confront them with obstacles to overcome in order to accomplish the task successfully." />
+                            </StackLayout>
+                        </StackLayout>
+                    </GridLayout>
+                </FlexboxLayout>
+
+                <Label class="sectionTitle" text="Context" height="30" verticalAlignment="center"/>
+                <FlexboxLayout margin="0 10 10 10" flexDirection="row" opacity="0.7" class="list-group-item">
+                    <GridLayout rows="auto" columns="auto, 10" backgroundColor="rgba(255,255,255,0.2)" borderRadius="10">
+                        <StackLayout col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
+                            <StackLayout margin="10" backgroundColor="rgba(0,0,0,0.5)" borderRadius="5">
+                                <Label class="sourcesanspro" textWrap="true" padding="5" text="This is the most common and straightforward sort of adventure there is. In the Action/Adventure scenario, you present your characters with a task and then confront them with obstacles to overcome in order to accomplish the task successfully." />
+                            </StackLayout>
+                        </StackLayout>
+                    </GridLayout>
+                </FlexboxLayout>
+
+                <Label class="sectionTitle" text="Story Hook" height="30" verticalAlignment="center"/>
+                <FlexboxLayout margin="0 10 10 10" flexDirection="row" opacity="0.7" class="list-group-item">
+                    <GridLayout rows="auto" columns="auto, 10" backgroundColor="rgba(255,255,255,0.2)" borderRadius="10">
+                        <StackLayout col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
+                            <StackLayout margin="10" backgroundColor="rgba(0,0,0,0.5)" borderRadius="5">
+                                <Label class="sourcesanspro" textWrap="true" padding="5" text="This is the most common and straightforward sort of adventure there is. In the Action/Adventure scenario, you present your characters with a task and then confront them with obstacles to overcome in order to accomplish the task successfully." />
+                            </StackLayout>
+                        </StackLayout>
+                    </GridLayout>
+                </FlexboxLayout>
+
+                <Label class="sectionTitle" text="Plot" height="30" verticalAlignment="center"/>
+                <FlexboxLayout margin="0 10 10 10" flexDirection="row" opacity="0.7" class="list-group-item">
+                    <GridLayout rows="auto" columns="auto, 10" backgroundColor="rgba(255,255,255,0.2)" borderRadius="10">
+                        <StackLayout col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
+                            <StackLayout margin="10" backgroundColor="rgba(0,0,0,0.5)" borderRadius="5">
+                                <Label class="sourcesanspro" textWrap="true" padding="5" text="This is the most common and straightforward sort of adventure there is. In the Action/Adventure scenario, you present your characters with a task and then confront them with obstacles to overcome in order to accomplish the task successfully." />
+                            </StackLayout>
+                        </StackLayout>
+                    </GridLayout>
+                </FlexboxLayout>
+
+                <Label class="sectionTitle" text="Goal" height="30" verticalAlignment="center"/>
+                <FlexboxLayout margin="0 10 10 10" flexDirection="row" opacity="0.7" class="list-group-item">
+                    <GridLayout rows="auto" columns="auto, 10" backgroundColor="rgba(255,255,255,0.2)" borderRadius="10">
+                        <StackLayout col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
+                            <StackLayout margin="10" backgroundColor="rgba(0,0,0,0.5)" borderRadius="5">
+                                <Label class="sourcesanspro" textWrap="true" padding="5" text="This is the most common and straightforward sort of adventure there is. In the Action/Adventure scenario, you present your characters with a task and then confront them with obstacles to overcome in order to accomplish the task successfully." />
+                            </StackLayout>
+                        </StackLayout>
+                    </GridLayout>
+                </FlexboxLayout>
+
+                <Label class="sectionTitle" text="Reward" height="30" verticalAlignment="center"/>
+                <FlexboxLayout margin="0 10 10 10" flexDirection="row" opacity="0.7" class="list-group-item">
+                    <GridLayout rows="auto" columns="auto, 10" backgroundColor="rgba(255,255,255,0.2)" borderRadius="10">
+                        <StackLayout col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
+                            <StackLayout margin="10" backgroundColor="rgba(0,0,0,0.5)" borderRadius="5">
+                                <Label class="sourcesanspro" textWrap="true" padding="5" text="This is the most common and straightforward sort of adventure there is. In the Action/Adventure scenario, you present your characters with a task and then confront them with obstacles to overcome in order to accomplish the task successfully." />
+                            </StackLayout>
+                        </StackLayout>
+                    </GridLayout>
+                </FlexboxLayout>
+            </StackLayout>
+        </ScrollView>
+    </GridLayout> 
+</GridLayout>
