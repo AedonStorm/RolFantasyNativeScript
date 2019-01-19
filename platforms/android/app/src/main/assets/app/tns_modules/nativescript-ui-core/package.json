@@ -1,27 +1,32 @@
 {
-  "_from": "nativescript-ui-core@~2.0.0",
+  "_args": [
+    [
+      "nativescript-ui-core@2.0.1",
+      "C:\\Datos\\Proyectos NativeScript\\tNativeScriptRepository\\tNativeScript"
+    ]
+  ],
+  "_from": "nativescript-ui-core@2.0.1",
   "_id": "nativescript-ui-core@2.0.1",
   "_inBundle": false,
   "_integrity": "sha512-6XeRrbp3cP7MFqny6TXpF8VVwhA5bfE2iC1RIB+YjEclK+gC1b+4iov4Yl8c4oP6CMQ40AfwU11R9cEsuRr81g==",
   "_location": "/nativescript-ui-core",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "nativescript-ui-core@~2.0.0",
+    "raw": "nativescript-ui-core@2.0.1",
     "name": "nativescript-ui-core",
     "escapedName": "nativescript-ui-core",
-    "rawSpec": "~2.0.0",
+    "rawSpec": "2.0.1",
     "saveSpec": null,
-    "fetchSpec": "~2.0.0"
+    "fetchSpec": "2.0.1"
   },
   "_requiredBy": [
     "/nativescript-ui-listview"
   ],
   "_resolved": "https://registry.npmjs.org/nativescript-ui-core/-/nativescript-ui-core-2.0.1.tgz",
-  "_shasum": "c59fee4d714d5138460b7aa98df217f1e02b643e",
-  "_spec": "nativescript-ui-core@~2.0.0",
-  "_where": "C:\\Datos\\Proyectos NativeScript\\t-native-script\\node_modules\\nativescript-ui-listview",
+  "_spec": "2.0.1",
+  "_where": "C:\\Datos\\Proyectos NativeScript\\tNativeScriptRepository\\tNativeScript",
   "author": {
     "name": "NativeScript Team",
     "email": "nativescriptplugins@progress.com"
@@ -30,9 +35,7 @@
   "bugs": {
     "url": "https://github.com/telerik/nativescript-ui-feedback/issues"
   },
-  "bundleDependencies": false,
   "dependencies": {},
-  "deprecated": false,
   "description": "Helper plugin that contains common native code shared among plugins.",
   "devDependencies": {
     "prompt": "^1.0.0",

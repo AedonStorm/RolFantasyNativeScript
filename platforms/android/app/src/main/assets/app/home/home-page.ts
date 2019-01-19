@@ -9,8 +9,6 @@ import { HomeViewModel, pageState } from "./home-view-model";
 import { EventData, fromObject } from "tns-core-modules/data/observable";
 import { ListView, ItemEventData } from "tns-core-modules/ui/list-view";
 import { Button } from "ui/button";
-import { AnimationCurve } from "ui/enums";
-import { screen } from "platform";
 
 let page: Page
 let model: HomeViewModel
@@ -64,24 +62,8 @@ export function onTapEnemy(args: EventData) {
     console.log("enemy")
     model.switchPage(pageState.Enemy)
 }
-export function onTapDungeon(args: EventData) {
-    const button = <Button>args.object;
-    console.log("dungeon")
-    model.switchPage(pageState.Dungeon)
-}
 export function onTapTabern(args: EventData) {
     const button = <Button>args.object;
     console.log("tabern")
-}
-export function onTapNPC(args: EventData) {
-    const button = <Button>args.object;
-    console.log("npc")
-}
-export function onTapShop(args: EventData) {
-    const button = <Button>args.object;
-    console.log("shop")
-}
-export function onTapChest(args: EventData) {
-    const button = <Button>args.object;
-    console.log("chest")
+    model.switchPage(pageState.Tabern)
 }

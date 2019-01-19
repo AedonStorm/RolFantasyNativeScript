@@ -30,7 +30,12 @@ if (onlyX86) {
 
 //common
 def BUILD_TOOLS_PATH = "$rootDir/build-tools"
+def PASSED_TYPINGS_PATH = System.getenv("TNS_TYPESCRIPT_DECLARATIONS_PATH")
 def TYPINGS_PATH = "$BUILD_TOOLS_PATH/typings"
+if (PASSED_TYPINGS_PATH != null) {
+    TYPINGS_PATH = PASSED_TYPINGS_PATH
+}
+
 def USER_PROJECT_ROOT = "$rootDir/../.."
 def PLATFORMS_ANDROID = "platforms/android"
 def PACKAGE_JSON = "package.json"
@@ -67,10 +72,10 @@ version of the {N} CLI install a previous version of the runtime package - 'tns 
 project.ext.extractedDependenciesDir = "${project.buildDir}/exploded-dependencies"
 def nativescriptDependencies = new JsonSlurper().parseText(dependenciesJson.text)
 
-def computeCompileSdkVersion = { -> project.hasProperty("compileSdk") ? compileSdk : 26 }
-def computeTargetSdkVersion = { -> project.hasProperty("targetSdk") ? targetSdk : 26 }
+def computeCompileSdkVersion = { -> project.hasProperty("compileSdk") ? compileSdk : 28 }
+def computeTargetSdkVersion = { -> project.hasProperty("targetSdk") ? targetSdk : 28 }
 def computeBuildToolsVersion = { ->
-    project.hasProperty("buildToolsVersion") ? buildToolsVersion : "27.0.3"
+    project.hasProperty("buildToolsVersion") ? buildToolsVersion : "28.0.3"
 }
 
 project.ext.selectedBuildType = project.hasProperty("release") ? "release" : "debug"
@@ -106,7 +111,17 @@ def getAppResourcesPath = { ->
     project.ext.appResourcesPath = absolutePathToAppResources
 
     return absolutePathToAppResources
-};
+}
+
+def applyBeforePluginGradleConfiguration = { ->
+    def appResourcesPath = getAppResourcesPath()
+    def pathToBeforePluginGradle = "$appResourcesPath/Android/before-plugins.gradle"
+    def beforePluginGradle = file(pathToBeforePluginGradle)
+    if (beforePluginGradle.exists()) {
+        println "\t + applying user-defined configuration from ${beforePluginGradle}"
+        apply from: pathToBeforePluginGradle
+    }
+}
 
 def applyAppGradleConfiguration = { ->
     def appResourcesPath = getAppResourcesPath()
@@ -164,7 +179,9 @@ android {
     buildToolsVersion computeBuildToolsVersion()
 
     defaultConfig {
-        minSdkVersion 17
+        def manifest = new XmlSlurper().parse(file(android.sourceSets.main.manifest.srcFile))
+        def minSdkVer = manifest."uses-sdk"."@android:minSdkVersion".text() ?: 17
+        minSdkVersion minSdkVer
         targetSdkVersion computeTargetSdkVersion()
         ndk {
             if (onlyX86) {
@@ -176,6 +193,11 @@ android {
         dexOptions {
             jumboMode = true
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
     sourceSets.main {
@@ -205,8 +227,9 @@ android {
     }
 
     setAppIdentifier()
-    applyAppGradleConfiguration()
+    applyBeforePluginGradleConfiguration()
     applyPluginGradleConfigurations()
+    applyAppGradleConfiguration()
 }
 
 def externalRuntimeExists = !findProject(':runtime').is(null)
@@ -239,15 +262,17 @@ repositories {
 }
 
 dependencies {
-    def supportVer = "27.0.1"
+    def supportVer = "28.0.0"
     if (project.hasProperty("supportVersion")) {
         supportVer = supportVersion
     }
 
+    println "Using support library version $supportVer"
+
     implementation "com.android.support:multidex:1.0.2"
     implementation "com.android.support:support-v4:$supportVer"
     implementation "com.android.support:appcompat-v7:$supportVer"
-    debugImplementation "com.android.support:design:$supportVer"
+    implementation "com.android.support:design:$supportVer"
 
     def sbgProjectExists = !findProject(':static-binding-generator').is(null)
     if (sbgProjectExists) {
@@ -342,6 +367,9 @@ tasks.whenTaskAdded({ org.gradle.api.DefaultTask currentTask ->
         currentTask.dependsOn(runSbg)
         currentTask.finalizedBy(ensureMetadataOutDir)
         ensureMetadataOutDir.finalizedBy(buildMetadata)
+    }
+    if (currentTask =~ /merge.*Assets/) {
+        currentTask.shouldRunAfter(buildMetadata);
     }
     if (currentTask =~ /assemble.*Debug/ || currentTask =~ /assemble.*Release/) {
         currentTask.finalizedBy("validateAppIdMatch")
@@ -470,14 +498,16 @@ task buildMetadata(type: JavaExec) {
     description "builds metadata with provided jar dependencies"
 
     inputs.files("$MDG_JAVA_DEPENDENCIES")
-    inputs.dir("$buildDir/intermediates/classes")
+
+    def classesDir = "$buildDir/intermediates/javac"
+    inputs.dir(classesDir)
 
     outputs.files("$METADATA_OUT_PATH/treeNodeStream.dat", "$METADATA_OUT_PATH/treeStringsStream.dat", "$METADATA_OUT_PATH/treeValueStream.dat")
 
     doFirst {
         // get compiled classes to pass to metadata generator
         // these need to be called after the classes have compiled
-        def classesDir = "$buildDir/intermediates/classes"
+        assert file(classesDir).exists()
 
         def classesSubDirs = new File(classesDir).listFiles()
         def selectedBuildType = project.ext.selectedBuildType
@@ -526,15 +556,18 @@ task generateTypescriptDefinitions(type: JavaExec) {
         }
 
         paramz.add("-output")
-        paramz.add("typings")
+        paramz.add("$TYPINGS_PATH")
+
+        new File("$TYPINGS_PATH").mkdirs()
 
         logger.info("Task generateTypescriptDefinitions: Call dts-generator.jar with arguments: " + paramz.toString().replaceAll(',', ''))
+        println "Task generateTypescriptDefinitions: Call dts-generator.jar with arguments: " + paramz.toString().replaceAll(',', '')
         args paramz.toArray()
     }
 }
 
 generateTypescriptDefinitions.onlyIf {
-    project.hasProperty("generateTypings") && Boolean.parseBoolean(project.generateTypings)
+    (project.hasProperty("generateTypings") && Boolean.parseBoolean(project.generateTypings)) || PASSED_TYPINGS_PATH != null
 }
 
 collectAllJars.finalizedBy(generateTypescriptDefinitions)

@@ -1,0 +1,73 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo" 
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:lv="nativescript-ui-listview"
+    actionBarHidden="true">
+    <!--xmlns:MainComponent="components/home-components"-->
+    <!-- <div>Icons made by <a href="http://www.freepik.com/" 
+    title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    
+    title="Flaticon">www.flaticon.com</a> is licensed by 
+    <a href="http://creativecommons.org/licenses/by/3.0/" 
+    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
+    
+    <ActionBar class="action-bar" tittle="App">
+        <ActionItem>
+            <Button width="50" height="50" text="{{ 'fa-bars' | fontIconConverter }}" class="fa btn-without-border"/>
+        </ActionItem>
+    </ActionBar>
+    <StackLayout>
+        <GridLayout width="100%" rows="auto" columns="*">
+            <Image verticalAlignment="top" row="0" width="100%" src="~/img/home/dragon.jpg" /> 
+            <GridLayout verticalAlignment="top" row="0" width="100%" height="100" columns="auto,*,50" rows="50,50">
+                <Label paddingLeft="10" class="tittle sourcesanspro-semibold" verticalAlignment="center" textAlign="center" col="0" row="0" text="Fantasy"/>
+                <Label paddingLeft="10" class="tittle sourcesanspro-semibold" verticalAlignment="center" textAlign="center" col="0" row="1" text="Generator"/>
+                <Button col="2" row="0" width="50" height="50" text="{{ 'fa-bars' | fontIconConverter }}" class="fa btn-without-border"/>
+            </GridLayout>
+            
+        </GridLayout>
+        <GridLayout columns="*" rows="60*, 60">
+            <StackLayout row="0" padding="10 0">
+                <!--<ListView id="homeList" class="list-group" 
+                        items="{{ homeListItems }}" itemTap="onItemTap" 
+                        backgroundColor="#26252A" opacity="0.6"
+                        loaded="{{ onListViewLoaded }}" 
+                        separatorColor="#F8A200"
+                        style="height:100%">
+                    <ListView.itemTemplate>
+                        <FlexboxLayout flexDirection="row" opacity="0.7" class="list-group-item">
+                            <GridLayout rows="*, *, 2*" columns="100, *, 10" backgroundColor="rgba(255,255,255,0.2)" height="100" margin="2.5 15" padding="10 0" borderRadius="10">
+                                <StackLayout row="0" rowSpan="3" col="0" backgroundColor="rgba(0,0,0,0.5)" height="80" width="80" verticalAlignment="center" horizontalAlignment="center" borderRadius="5"></StackLayout>
+                                <StackLayout row="0" col="1" backgroundColor="rgba(0,0,0,0.5)" height="14" width="20%" verticalAlignment="center" horizontalAlignment="left" borderRadius="5"></StackLayout>
+                                <StackLayout row="1" col="1" backgroundColor="rgba(0,0,0,0.5)" height="12" width="40%" verticalAlignment="center" horizontalAlignment="left" borderRadius="5"></StackLayout>
+                                <StackLayout row="2" col="1" backgroundColor="rgba(0,0,0,0.5)" height="40" width="100%" verticalAlignment="center" horizontalAlignment="left" borderRadius="5"></StackLayout>
+                            </GridLayout>
+                        </FlexboxLayout>
+                    </ListView.itemTemplate>
+                </ListView>-->
+            </StackLayout>
+            <lv:RadListView height="60" id="recentPlayersView" backgroundColor="white"  width="100%" scrollBarIndicatorVisible="false"  items="{{ homeListItems }}">
+                <lv:RadListView.listViewLayout>
+                    <lv:ListViewLinearLayout scrollDirection="Horizontal"/>
+                </lv:RadListView.listViewLayout>
+                <lv:RadListView.itemTemplate>
+                    <StackLayout orientation="horizontal" id="recentPlayers_carousel">
+                        <Image verticalAlignment="middle" col="0" id="btnHome" tap="onTapHome" width="100%" height="100%" src="~/img/home/icons/banner.png" backgroundColor="rgba(255,255,255,0.2)"/>
+                    </StackLayout>
+                </lv:RadListView.itemTemplate>
+            </lv:RadListView>
+            <!-- <GridLayout row="1" width="100%" height="100%" height="60" verticalAlignment="bottom" 
+                        columns="*, *, *, *, *, *, *, *" rows="*" padding="5">
+
+                <Image col="0" id="btnHome" tap="onTapHome" width="100%" height="100%" src="~/img/home/icons/banner.png" backgroundColor="rgba(255,255,255,0.2)"/>
+                <Image col="1" id="btnAdventure" tap="onTapAdventure" width="100%" height="100%" padding="10" src="~/img/home/icons/scroll.png"/>
+                <Image col="2" id="btnEnemy" tap="onTapEnemy" width="100%" height="100%" padding="10" src="~/img/home/icons/sword-1.png"/>
+                <Image col="3" id="btnDungeon" tap="onTapDungeon" width="100%" height="100%" padding="10" src="~/img/home/icons/fortress.png"/>
+                <Image col="4" id="btnTabern" tap="onTapTabern" width="100%" height="100%" padding="10" src="~/img/home/icons/lute.png"/>
+                <Image col="5" id="btnNPC" tap="onTapNPC" width="100%" height="100%" src="~/img/home/icons/knight.png"/>
+                <Image col="6" id="btnShop" tap="onTapShop" width="100%" height="100%" src="~/img/home/icons/shield-1.png"/>
+                <Image col="7" id="btnChest" tap="onTapChest" width="100%" height="100%" src="~/img/home/icons/chest.png"/>
+            </GridLayout> -->
+            <!--<MainComponent:bottomBar row="1" width="100%" height="100%" backgroundColor="blue"/>-->
+        </GridLayout>
+    </StackLayout>
+</Page>

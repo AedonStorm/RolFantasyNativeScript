@@ -1,1 +1,1 @@
-C:\Datos\Proyectos NativeScript\t-native-script\platforms\android\app/src/main/java
+C:\Datos\Proyectos NativeScript\tNativeScriptRepository\tNativeScript\platforms\android\app/src/main/java

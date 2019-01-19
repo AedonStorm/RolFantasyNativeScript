@@ -19,3 +19,28 @@
     background-position: center; 
     background-size: cover; 
 }
+
+.topbar-ios{
+    color: white;
+    font-weight: 200;
+    height: 60;
+}
+.topbar {
+    color: white;
+    font-weight: 200;
+    height: 50;
+    margin-top: 0;
+}
+.topbar button{
+    background-color: transparent;
+    border-color: transparent;
+    border-width: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.topbar-tittle {
+    text-align: center;
+    font-size: 24;
+    font-weight: 500;
+}
