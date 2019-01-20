@@ -1,7 +1,9 @@
 import { Observable } from "data/observable"
+import { ObservableArray } from "tns-core-modules/data/observable-array";
+import { ObservableProperty } from "../shared/observable-property-decorator";
 import { Page, Color, View } from "tns-core-modules/ui/page/page"
 import { screen } from "platform"
-import {AnimationCurve} from "tns-core-modules/ui/enums"
+import { AnimationCurve } from "tns-core-modules/ui/enums"
 import { AdventurePageController } from "~/home/adventure-page/AdventurePageController"
 import { EncounterPageController } from "~/home/encounter-page/EncounterPageController"
 
@@ -25,6 +27,8 @@ export class HomeViewModel extends Observable {
     adventurePage: View
     encounterPage: View
 
+    @ObservableProperty() homeListItems: ObservableArray<number>
+
     constructor(page: Page) {
         super()
         this.page = page
@@ -32,7 +36,8 @@ export class HomeViewModel extends Observable {
 
         this.adventurePage = page.getViewById("adventure-page")
         this.encounterPage = page.getViewById("encounter-page")
-        page.bindingContext = this
+
+        this.homeListItems = new ObservableArray<number>([1,2,3,4,5,6,7,8,9])
     }
         
     public switchPage(nextPageState: PageState) {
@@ -52,7 +57,7 @@ export class HomeViewModel extends Observable {
                     break
                  } 
                  case PageState.Adventure: { 
-                    if (this.adventurePageController == null)  this.adventurePageController = new AdventurePageController
+                    if (this.adventurePageController == null)  this.adventurePageController = new AdventurePageController(this.adventurePage)
                     this.pageAnimationIn(this.adventurePage, nextPageState)
                     break
                  }

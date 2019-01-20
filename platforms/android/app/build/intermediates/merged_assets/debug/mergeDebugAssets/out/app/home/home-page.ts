@@ -22,6 +22,19 @@ export function onNavigatingTo(args: NavigatedData) {
     page.bindingContext.homeListItems.push({ title: "Game of Thrones" })
     // Manually trigger the update so that the new color is shown.
     listView.refresh()
+
+    const firebase = require("nativescript-plugin-firebase")
+
+    firebase.init({
+    // Optionally pass in properties for database, authentication and cloud messaging,
+    // see their respective docs.
+    }).then(
+    () => {
+        console.log("firebase.init done")
+    },
+    error => {
+        console.log(`firebase.init error: ${error}`)
+    })
 }
 
 export function loadList() {

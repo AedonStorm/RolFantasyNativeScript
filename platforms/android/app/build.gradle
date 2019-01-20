@@ -367,6 +367,7 @@ tasks.whenTaskAdded({ org.gradle.api.DefaultTask currentTask ->
         currentTask.dependsOn(runSbg)
         currentTask.finalizedBy(ensureMetadataOutDir)
         ensureMetadataOutDir.finalizedBy(buildMetadata)
+		buildMetadata.finalizedBy(copyMetadata)
     }
     if (currentTask =~ /merge.*Assets/) {
         currentTask.shouldRunAfter(buildMetadata);
@@ -637,3 +638,31 @@ task cleanMdg(type: Delete) {
 
 cleanSbg.dependsOn(cleanMdg)
 clean.dependsOn(cleanSbg)
+
+task copyMetadata {
+  doLast {
+    copy {
+        from "$projectDir/src/main/assets/metadata"
+        def toDir = project.hasProperty("release") ? "release" : "debug"
+        def toAssetsDir = "assets"
+
+        if (new File("$projectDir/build/intermediates/merged_assets").listFiles() != null) {
+          toAssetsDir = "merged_assets"
+          toDir = new File("$projectDir/build/intermediates/merged_assets").listFiles()[0].name
+          if (toDir == 'debug') {
+            toDir += "/mergeDebugAssets"
+          } else {
+            toDir += "/mergeReleaseAssets"
+          }
+          toDir += "/out"
+        } else if (new File("$projectDir/build/intermediates/assets").listFiles() != null) {
+          toDir = new File("$projectDir/build/intermediates/assets").listFiles()[0].name
+          if (toDir != 'debug' && toDir != 'release') {
+            toDir += "/release"
+          }
+        }
+
+        into "$projectDir/build/intermediates/" + toAssetsDir + "/" + toDir + "/metadata"
+    }
+  }
+}

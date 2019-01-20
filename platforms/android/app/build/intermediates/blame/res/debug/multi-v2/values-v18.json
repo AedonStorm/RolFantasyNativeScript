@@ -4,7 +4,7 @@
             "outputFile": "C:\\Datos\\Proyectos NativeScript\\tNativeScriptRepository\\tNativeScript\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Aedon\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\9be9553518b89c3c116a8d9f203348d6\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\Aedon\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\3daf69fee0d4c116c5b815b0d92d53f1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
