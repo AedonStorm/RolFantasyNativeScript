@@ -1,1 +1,0 @@
-C:\Datos\Proyectos NativeScript\tNativeScriptRepository\tNativeScript\platforms\android\app/src/main/assets/app

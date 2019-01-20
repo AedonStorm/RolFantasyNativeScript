@@ -1,4 +1,0 @@
-#Sun Jan 20 00:05:20 CET 2019
-base.0=C\:\\Datos\\Proyectos NativeScript\\tNativeScriptRepository\\tNativeScript\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
