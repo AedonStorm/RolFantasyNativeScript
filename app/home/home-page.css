@@ -1,7 +1,25 @@
 .tittle {
     color: white;
-    font-size: 36;
+    font-size: 42;
 }
+
+.red {
+    color: #e10b0b;
+}
+
+.bg-red {
+    background-color: #e10b0b;
+}
+
+.gray {
+    color: #3f3f3f;
+}
+
+.bg-gray {
+    background-color: #3f3f3f;
+}
+
+
 
 .btn-without-border {
     color: white;
@@ -38,31 +56,37 @@
 }
 
 .topbar-tittle {
+    color: white;
     text-align: center;
     font-size: 24;
     font-weight: 500;
 }
 
 label {
-    color: white;
+    color: black;
 }
 
 .page-title {
-    font-family: 'SourceSansPro-Regular', 'Source Sans Pro', 'sans-serif';
+    font-family: 'NotoSerif-Bold', serif;
     font-size: 24;
+    font-weight: bold;
 }
 
 .page-subtitle {
-    font-family: 'SourceSansPro-Regular', 'Source Sans Pro', 'sans-serif';
-    font-size: 18;
+    font-family: 'NotoSerif-Regular', serif;
+    font-size: 24;
+    padding-left: 25;
 }
 
 .sectionTitle {
-    font-family: 'SourceSansPro-Regular', 'Source Sans Pro', 'sans-serif';
-    font-size: 16;
+    font-family: 'NotoSerif-Bold', serif;
+    font-size: 20;
     font-weight: bold;
-    padding-top: 5;
-    padding-left: 10;
+}
+.sectionSubtitle {
+    font-family: 'NotoSerif-Regular', serif;
+    font-size: 20;
+    padding-left: 25;
 }
 
 .page-body {

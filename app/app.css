@@ -18,7 +18,7 @@ components that have the btn class name.
 
 .fa {
     font-family: 'FontAwesome','FontAwesome', 'fontawesome-webfont';
-    font-size: 32;
+    font-size: 24;
  }
 
 .roboto {
@@ -33,6 +33,28 @@ components that have the btn class name.
 .sourcesanspro-semibold {
    font-family: 'SourceSansPro-SemiBold', 'Source Sans Pro', 'sans-serif';
 }
+
+.lato-regular {
+   font-family: 'Lato-Regular', sans-serif;
+}
+
+.lato-bold {
+   font-family: 'Lato-Bold', sans-serif;
+}
+
+.lato-black {
+   font-family: 'Lato-Black', sans-serif;
+}
+
+.noto-bold {
+   font-family: 'NotoSerif-Bold', serif;
+   font-weight: bold;
+}
+
+.noto {
+   font-family: 'NotoSerif-Regular', serif;
+}
+
 
 .btn {
     font-size: 18;
