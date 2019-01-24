@@ -42,8 +42,8 @@ export class HomeViewModel extends Observable {
         
     public switchPage(nextPageState: PageState) {
         if (nextPageState != this.currentPageState && bottomBarInteraction) {
-            console.log("Current State: " + this.currentPageState.toString())
-            console.log("Next State: " + nextPageState.toString())
+            //console.log("Current State: " + this.currentPageState.toString())
+            //console.log("Next State: " + nextPageState.toString())
 
             bottomBarInteraction = false
             const currentPageId: string = PageState[this.currentPageState]
@@ -62,7 +62,7 @@ export class HomeViewModel extends Observable {
                     break
                  }
                  case PageState.Encounter: { 
-                    if (this.encounterageController == null)  this.encounterageController = new EncounterPageController
+                    if (this.encounterageController == null)  this.encounterageController = new EncounterPageController(this.encounterPage, this.pageWidth)
                     this.pageAnimationIn(this.encounterPage, nextPageState)
                     break
                  }

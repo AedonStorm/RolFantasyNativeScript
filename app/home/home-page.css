@@ -92,3 +92,21 @@ label {
 .page-body {
     
 }
+
+.text-align-center {
+    text-align: center;
+}
+
+.filter-title {
+    font-family: 'NotoSerif-Bold', serif;
+    font-size: 24;
+    font-weight: bold;
+    color: white;
+}
+
+.filter-item {
+    font-family: 'NotoSerif-Bold', serif;
+    font-size: 18;
+    font-weight: bold;
+    color: #e10b0b;
+}

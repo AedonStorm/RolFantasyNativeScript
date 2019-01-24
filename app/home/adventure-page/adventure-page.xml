@@ -17,15 +17,15 @@
             <StackLayout>
 
                 <!--Version 1 - without image -->
-                <StackLayout marginTop="20" height="40" verticalAlignment="center" orientation="horizontal">
+                <StackLayout marginTop="30" height="40" verticalAlignment="center" orientation="horizontal">
                     <Label class="lato-black page-subtitle" text="Theme: "/>
-                    <Label class="lato-black page-title red" text="{{ adventureType }}"/>
+                    <Label class="lato-black page-title red" text="{{ adventureType }}" textWrap="false" width="100%"/>
                 </StackLayout>
                 
                 <FlexboxLayout margin="0 20 0 20" flexDirection="row" class="list-group-item">
                     <GridLayout rows="auto" columns="auto, 10" borderRadius="10" backgroundColor="#efebe8">
                         <StackLayout row="0" col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
-                            <StackLayout margin="0 10 10 10" borderRadius="5">
+                            <StackLayout margin="0 10 0 10" borderRadius="5">
                                 <Label class="lato-regular" textWrap="true" padding="5" text="{{ adventureDescription }}" />
                             </StackLayout>
                         </StackLayout>
@@ -52,72 +52,71 @@
                     </GridLayout>
                 </FlexboxLayout>-->
 
-                <StackLayout marginTop="20" height="30" verticalAlignment="center" orientation="horizontal">
+                <StackLayout marginTop="40" height="30" verticalAlignment="center" orientation="horizontal">
                     <Label class="sectionSubtitle" text="Story Hook: "/>
-                    <Label class="sectionTitle" text="{{ adventureHookTitle }}"/>
+                    <Label class="sectionTitle" text="{{ adventureHookTitle }}" textWrap="false" width="100%"/>
                 </StackLayout>
                 <FlexboxLayout margin="0 20 0 20" flexDirection="row" class="list-group-item">
-                    <GridLayout rows="auto" columns="auto, 10" padding="10" backgroundColor="#efebe8" borderRadius="10">
-                        <StackLayout col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
-                            <StackLayout borderRadius="5">
-                                <Label class="lato-regular" textWrap="true" text="{{ adventureHook }}" />
+                    <GridLayout rows="auto" columns="auto, 10" borderRadius="10" backgroundColor="#efebe8">
+                        <StackLayout row="0" col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
+                            <StackLayout margin="0 10 0 10" borderRadius="5">
+                                <Label class="lato-regular" textWrap="true" padding="5" text="{{ adventureHook }}" />
                             </StackLayout>
                         </StackLayout>
                     </GridLayout>
                 </FlexboxLayout>
 
-                <StackLayout marginTop="20" height="30" verticalAlignment="center" orientation="horizontal">
+                <StackLayout marginTop="40" height="30" verticalAlignment="center" orientation="horizontal">
                     <Label class="sectionSubtitle" text="Plot: "/>
-                    <Label class="sectionTitle" text="{{ adventurePlotTitle }}"/>
+                    <Label class="sectionTitle" text="{{ adventurePlotTitle }}" textWrap="false" width="100%"/>
                 </StackLayout>
                 <FlexboxLayout margin="0 20 0 20" flexDirection="row" class="list-group-item">
-                    <GridLayout rows="auto" columns="auto, 10" padding="10" backgroundColor="#efebe8" borderRadius="10">
-                        <StackLayout col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
-                            <StackLayout borderRadius="5">
-                                <Label class="lato-regular" textWrap="true" text="{{ adventurePlot }}" />
+                    <GridLayout rows="auto" columns="auto, 10" borderRadius="10" backgroundColor="#efebe8">
+                        <StackLayout row="0" col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
+                            <StackLayout margin="0 10 0 10" borderRadius="5">
+                                <Label class="lato-regular" textWrap="true" padding="5" text="{{ adventurePlot }}" />
                             </StackLayout>
                         </StackLayout>
                     </GridLayout>
                 </FlexboxLayout>
 
-                <StackLayout marginTop="20" height="30" verticalAlignment="center" orientation="horizontal">
+                <StackLayout marginTop="40" height="30" verticalAlignment="center" orientation="horizontal">
                     <Label class="sectionSubtitle" text="Goal: "/>
-                    <Label class="sectionTitle" text="{{ adventureGoalTitle }}"/>
+                    <Label class="sectionTitle" text="{{ adventureGoalTitle }}" textWrap="false" width="100%"/>
                 </StackLayout>
                 <FlexboxLayout margin="0 20 0 20" flexDirection="row" class="list-group-item">
-                    <GridLayout rows="auto" columns="auto, 10" padding="10" backgroundColor="#efebe8" borderRadius="10">
-                        <StackLayout col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
-                            <StackLayout borderRadius="5">
-                                <Label class="lato-regular" textWrap="true" text="{{ adventureGoal }}" />
+                    <GridLayout rows="auto" columns="auto, 10" borderRadius="10" backgroundColor="#efebe8">
+                        <StackLayout row="0" col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
+                            <StackLayout margin="0 10 0 10" borderRadius="5">
+                                <Label class="lato-regular" textWrap="true" padding="5" text="{{ adventureGoal }}" />
                             </StackLayout>
                         </StackLayout>
                     </GridLayout>
                 </FlexboxLayout>
 
-                <StackLayout marginTop="20" height="30" verticalAlignment="center" orientation="horizontal">
+                <StackLayout marginTop="40" height="30" verticalAlignment="center" orientation="horizontal">
                     <Label class="sectionSubtitle" text="Climax: "/>
-                    <Label class="sectionTitle" text="{{ adventureClimaxTitle }}"/>
+                    <Label class="sectionTitle" text="{{ adventureClimaxTitle }}" textWrap="false" width="100%"/>
                 </StackLayout>
                 <FlexboxLayout margin="0 20 0 20" flexDirection="row" class="list-group-item">
-                    <GridLayout rows="auto" columns="auto, 10" padding="10" backgroundColor="#efebe8" borderRadius="10">
-                        <StackLayout col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
-                            <StackLayout borderRadius="5">
-                                <Label class="lato-regular" textWrap="true" text="{{ adventureClimax }}" />
+                    <GridLayout rows="auto" columns="auto, 10" borderRadius="10" backgroundColor="#efebe8">
+                        <StackLayout row="0" col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
+                            <StackLayout margin="0 10 0 10" borderRadius="5">
+                                <Label class="lato-regular" textWrap="true" padding="5" text="{{ adventureClimax }}" />
                             </StackLayout>
                         </StackLayout>
                     </GridLayout>
                 </FlexboxLayout>
 
-
-                <StackLayout marginTop="20" height="30" verticalAlignment="center" orientation="horizontal">
+                <StackLayout marginTop="40" height="30" verticalAlignment="center" orientation="horizontal">
                     <Label class="sectionSubtitle" text="Reward: "/>
-                    <Label class="sectionTitle" text="None"/>
+                    <Label class="sectionTitle" text="None" textWrap="false" width="100%"/>
                 </StackLayout>
-                <FlexboxLayout margin="0 20 0 20" flexDirection="row" class="list-group-item">
-                    <GridLayout rows="auto" columns="auto, 10" padding="10" backgroundColor="#efebe8" borderRadius="10">
-                        <StackLayout col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
-                            <StackLayout borderRadius="5">
-                                <Label class="lato-regular" textWrap="true" text="" />
+                <FlexboxLayout margin="0 20 25 20" flexDirection="row" class="list-group-item">
+                    <GridLayout rows="auto" columns="auto, 10" borderRadius="10" backgroundColor="#efebe8">
+                        <StackLayout row="0" col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
+                            <StackLayout margin="0 10 0 10" borderRadius="5">
+                                <Label class="lato-regular" textWrap="true" padding="5" text="" />
                             </StackLayout>
                         </StackLayout>
                     </GridLayout>

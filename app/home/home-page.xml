@@ -24,16 +24,50 @@
         <GridLayout row="0" width="100%" rows="auto" columns="*" class="bg-red">
             <!--<Image verticalAlignment="top" row="0" width="100%" src="~/img/home/dragon.jpg" backgroundColor="white"/>-->
             <GridLayout verticalAlignment="top" row="0" width="100%" columns="auto,*,50" rows="50,50,100">
-                <StackLayout paddingLeft="20" row="0" rowSpan="3" col="0" height="300" verticalAlignment="center">
+                <StackLayout paddingLeft="20" row="0" rowSpan="3" col="0" height="200" verticalAlignment="center">
                     <Label class="tittle noto-bold" textAlign="center" text="Fantasy"/>
                     <Label class="tittle noto-bold" textAlign="center" text="Generator"/>
                 </StackLayout>
-                <StackLayout row="0" rowSpan="3" col="1" height="300" verticalAlignment="center">
+                <StackLayout row="0" rowSpan="3" col="1" height="200" verticalAlignment="center">
                     <Image height="100" src="~/img/logoBlanco.png"/>
                 </StackLayout>
                 <Button col="2" row="0" width="50" height="50" text="{{ 'fa-bars' | fontIconConverter }}" class="fa btn-without-border"/>
             </GridLayout>
         </GridLayout>
+
+        <ScrollView row="1">
+            <StackLayout>
+                <StackLayout marginTop="5" height="80" verticalAlignment="center">
+                    <Label class="lato-black page-subtitle" text="Last News: "/>
+                    <Label paddingLeft="25" class="lato-black page-title red" text="DUNGEONS & DRAGONS" textWrap="false"/>
+                </StackLayout>
+                
+                <FlexboxLayout margin="0 20 0 20" flexDirection="row" class="list-group-item">
+                    <GridLayout rows="auto" columns="auto, 10" borderRadius="10" backgroundColor="#efebe8">
+                        <StackLayout row="0" col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
+                            <StackLayout margin="0 10 0 10" borderRadius="5">
+                                <Label class="lato-regular" textWrap="true" padding="5" text="Commodi sint consequatur fugiat quisquam quis. Voluptas accusamus quaerat aut nobis iste aut. A nisi in ullam molestias corrupti et. Qui et optio repudiandae omnis corrupti debitis similique quae. Omnis beatae sint dolor." />
+                            </StackLayout>
+                        </StackLayout>
+                    </GridLayout>
+                </FlexboxLayout>
+
+                <StackLayout marginTop="40" height="80" verticalAlignment="center">
+                    <Label class="lato-black page-subtitle" text="Last News: "/>
+                    <Label paddingLeft="25" class="lato-black page-title red" text="PATHFINDING" textWrap="false"/>
+                </StackLayout>
+                
+                <FlexboxLayout margin="0 20 25 20" flexDirection="row" class="list-group-item">
+                    <GridLayout rows="auto" columns="auto, 10" borderRadius="10" backgroundColor="#efebe8">
+                        <StackLayout row="0" col="0" width="100%" verticalAlignment="center" horizontalAlignment="left" >
+                            <StackLayout margin="0 10 0 10" borderRadius="5">
+                                <Label class="lato-regular" textWrap="true" padding="5" text="Qui similique aliquid ex numquam. Nemo magnam qui saepe nobis corporis et. Dolor perspiciatis dolorem tempora. Doloremque iusto saepe et ut sed odit dicta. Aut magnam expedita unde necessitatibus aut quia iure molestias." />
+                            </StackLayout>
+                        </StackLayout>
+                    </GridLayout>
+                </FlexboxLayout>
+            </StackLayout>
+        </ScrollView>
 
         <!--<GridLayout row="1" rowSpan="2" width="100%" height="100%" backgroundColor="#192427"/>-->
         <!--<StackLayout row="1">
